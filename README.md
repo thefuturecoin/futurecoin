@@ -15,7 +15,7 @@ out collectively by the network. Futurecoin is also the name of the open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Futurecoin client sofware, see https://bitcointalk.org/index.php?topic=267545.0
+the Futurecoin client sofware, see https://bitcointalk.org/index.php?topic=592473.0
 
 License
 -------
