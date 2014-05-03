@@ -1323,7 +1323,14 @@ static const int64 nMinSubsidy = 10 * COIN;
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = nStartSubsidy;
+    //hardfork
+    if(nHeight > 10000) {
+        int64 nSubsidy = 100 * COIN;
+    }
+    else {
+        int64 nSubsidy = nStartSubsidy;
+    }
+    
 
     if(nHeight <= 400) {
         return 12500 * COIN + nFees; //IPO blocks 
