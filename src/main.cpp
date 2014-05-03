@@ -1324,12 +1324,11 @@ static const int64 nMinSubsidy = 10 * COIN;
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     //hardfork
+    int64 nSubsidy = nStartSubsidy;
     if(nHeight > 10000) {
-        int64 nSubsidy = 100 * COIN;
+        nSubsidy = 100 * COIN;
     }
-    else {
-        int64 nSubsidy = nStartSubsidy;
-    }
+
     
 
     if(nHeight <= 400) {
